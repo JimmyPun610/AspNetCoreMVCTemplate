@@ -4,7 +4,9 @@
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="NetCoreRestfulTemplate" selected="True" />
+          <Node name="NetCoreRestfulTemplate" expanded="True" selected="True">
+            <Node name="NetCoreRestfulTemplate" expanded="True" />
+          </Node>
         </State>
       </Pad>
     </Pads>
