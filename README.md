@@ -1,7 +1,12 @@
 # NetCoreRestfulTemplate
 NetCore3.1 Template, integrated with some common library
 
-### Testing with CircleCI
+### Integrated with Azure DevOps CI/CD
+[![Build Status](https://dev.azure.com/ffsproject/NetCoreRestfulTemplate/_apis/build/status/JimmyPun610.NetCoreRestfulTemplate?branchName=master)](https://dev.azure.com/ffsproject/NetCoreRestfulTemplate/_build/latest?definitionId=6&branchName=master)
+
+https://netcorerestfultemplate.azurewebsites.net/
+
+
 ### Swagger
 ### NLog
 ### CORS
