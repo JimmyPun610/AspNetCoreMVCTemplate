@@ -10,7 +10,7 @@ using Microsoft.OpenApi.Models;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-namespace NetCoreRestfulTemplate
+namespace AspNetCoreMVCTemplate
 {
     public class Startup
     {

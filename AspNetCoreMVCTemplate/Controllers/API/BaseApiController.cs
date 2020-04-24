@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace NetCoreRestfulTemplate.Controllers.API
+namespace AspNetCoreMVCTemplate.Controllers.API
 {
     public class BaseApiController : Controller
     {

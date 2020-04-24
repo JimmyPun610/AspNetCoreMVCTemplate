@@ -1,6 +1,6 @@
 using System;
 
-namespace NetCoreRestfulTemplate.Models
+namespace AspNetCoreMVCTemplate.Models
 {
     public class ErrorViewModel
     {
