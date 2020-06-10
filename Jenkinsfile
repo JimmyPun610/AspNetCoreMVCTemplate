@@ -1,14 +1,9 @@
 pipeline {
-  agent {
-    docker {
-      image 'microsoft/dotnet'
-    }
-
-  }
+  agent none
   stages {
-    stage('Checkout') {
+    stage('Create Docker') {
       steps {
-        echo 'Clone source complete'
+        sh 'sudo docker run --name microsoft/aspnetcore -d -p 8810:8810 aspnetcore:latest'
       }
     }
 
