@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('Checkout') {
       steps {
-        echo 'Clone source complete'
+        git(url: 'https://github.com/JimmyPun610/AspNetCoreMVCTemplate.git', branch: 'master', changelog: true, poll: true)
       }
     }
 
