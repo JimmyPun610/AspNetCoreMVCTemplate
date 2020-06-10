@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('Checkout') {
       steps {
-        sh 'git clone "git@https://github.com/JimmyPun610/AspNetCoreMVCTemplate.git"'
+        sh 'git clone https://github.com/JimmyPun610/AspNetCoreMVCTemplate.git'
         echo 'Clone source complete'
       }
     }
