@@ -1,15 +1,14 @@
 pipeline {
   agent {
-    node {
-      label 'master'
+    docker {
+      image 'microsoft/dotnet'
     }
 
   }
   stages {
-    stage('Create Docker') {
+    stage('docker') {
       steps {
-        sh 'sudo -u opc -s'
-        sh 'sudo docker run --name microsoft/aspnetcore -d -p 8810:8810 aspnetcore:latest'
+        echo 'ss'
       }
     }
 
