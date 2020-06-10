@@ -1,5 +1,10 @@
 pipeline {
-  agent none
+  agent {
+    docker {
+      image 'microsoft/dotnet'
+    }
+
+  }
   stages {
     stage('Checkout') {
       steps {
