@@ -6,9 +6,9 @@ pipeline {
 
   }
   stages {
-    stage('Build') {
+    stage('Restore Package') {
       steps {
-        sh 'dotnet build "/AspNetCoreMVCTemplate/AspNetCoreMVCTemplate.csproj" -c Release -o /publish'
+        sh 'nuget restore "/AspNetCoreMVCTemplate.sln"'
       }
     }
 
