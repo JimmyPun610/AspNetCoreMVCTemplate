@@ -20,13 +20,14 @@ pipeline {
 
     stage('Build') {
       steps {
-        sh 'dotnet build --configuration Release'
+        sh 'dotnet build --configuration Release -o "/output"'
       }
     }
 
-    stage('Publish') {
+    stage('Check') {
       steps {
-        sh 'dotnet publish "/AspNetCoreMVCTemplate/AspNetCoreMVCTemplate.csproj"'
+        sh 'cd "/output"'
+        sh 'ls'
       }
     }
 
