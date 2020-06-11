@@ -14,7 +14,7 @@ pipeline {
 
     stage('Clean') {
       steps {
-        sh 'dotnet build --configuration Release'
+        sh 'dotnet clean'
       }
     }
 
@@ -26,9 +26,7 @@ pipeline {
 
     stage('Check') {
       steps {
-        sh 'ls'
-        sh 'cd AspNetCoreMVCTemplate'
-        sh 'ls'
+        sh 'ls "AspNetCoreMVCTemplate\\bin\\Release\\netcoreapp3.1"'
       }
     }
 
