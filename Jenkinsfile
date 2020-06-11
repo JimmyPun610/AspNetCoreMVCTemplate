@@ -6,9 +6,21 @@ pipeline {
 
   }
   stages {
-    stage('Restore Package') {
+    stage('Restore') {
       steps {
         sh 'dotnet restore'
+      }
+    }
+
+    stage('Clean') {
+      steps {
+        sh 'dotnet build --configuration Release'
+      }
+    }
+
+    stage('Build') {
+      steps {
+        sh 'dotnet build --configuration Release'
       }
     }
 
