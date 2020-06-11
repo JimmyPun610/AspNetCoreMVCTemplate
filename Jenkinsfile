@@ -1,15 +1,14 @@
 pipeline {
   agent {
     docker {
-      image 'microsoft/aspnetcore:latest'
+      image 'node:7-alpine'
     }
 
   }
   stages {
     stage('Checkout') {
       steps {
-        git(url: 'https://github.com/JimmyPun610/AspNetCoreMVCTemplate.git', branch: 'master', changelog: true, poll: true)
-        sh 'dotnet --version'
+        sh 'node --version'
       }
     }
 
