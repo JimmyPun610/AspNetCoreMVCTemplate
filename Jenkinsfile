@@ -1,14 +1,14 @@
 pipeline {
   agent {
     docker {
-      image 'node:7-alpine'
+      image 'microsoft/dotnet:latest'
     }
 
   }
   stages {
     stage('Checkout') {
       steps {
-        sh 'node --version'
+        sh 'dotnet --version'
       }
     }
 
