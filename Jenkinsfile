@@ -32,7 +32,7 @@ pipeline {
 
     stage('Check') {
       steps {
-        sh 'ls AspNetCoreMVCTemplate/bin/publish'
+        sh 'ls AspNetCoreMVCTemplate/bin/Release/netcoreapp3.1/publish/'
       }
     }
 
