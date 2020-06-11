@@ -24,6 +24,12 @@ pipeline {
       }
     }
 
+    stage('Publish') {
+      steps {
+        sh 'dotnet publish "/AspNetCoreMVCTemplate/AspNetCoreMVCTemplate.csproj"'
+      }
+    }
+
   }
   environment {
     Home = '/tmp'
