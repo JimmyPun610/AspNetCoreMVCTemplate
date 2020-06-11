@@ -26,13 +26,13 @@ pipeline {
 
     stage('Publish') {
       steps {
-        sh 'dotnet publish'
+        sh 'dotnet publish -c Release'
       }
     }
 
     stage('Check') {
       steps {
-        sh 'ls AspNetCoreMVCTemplate/bin/Release/netcoreapp3.1'
+        sh 'ls AspNetCoreMVCTemplate/bin/publish'
       }
     }
 
