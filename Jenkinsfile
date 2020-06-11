@@ -26,7 +26,7 @@ pipeline {
 
     stage('Check') {
       steps {
-        sh '''ls AspNetCoreMVCTemplate\\bin
+        sh '''ls AspNetCoreMVCTemplate/bin
 '''
       }
     }
