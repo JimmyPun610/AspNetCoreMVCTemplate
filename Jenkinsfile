@@ -6,9 +6,9 @@ pipeline {
 
   }
   stages {
-    stage('Publish') {
+    stage('Build') {
       steps {
-        sh 'dotnet publish "/AspNetCoreMVCTemplate/AspNetCoreMVCTemplate.csproj" -o /publish'
+        sh 'dotnet build "/AspNetCoreMVCTemplate/AspNetCoreMVCTemplate.csproj" -c Release -o /publish'
       }
     }
 
