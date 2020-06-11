@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('Publish') {
       steps {
-        sh 'dotnet publish "~/AspNetCoreMVCTemplate/AspNetCoreMVCTemplate.csproj" -o /publish'
+        sh 'dotnet publish "/AspNetCoreMVCTemplate/AspNetCoreMVCTemplate.csproj" -o /publish'
       }
     }
 
