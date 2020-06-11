@@ -6,9 +6,10 @@ pipeline {
 
   }
   stages {
-    stage('Checkout') {
+    stage('Publish') {
       steps {
         sh 'ls'
+        sh 'dotnet publish "~/AspNetCoreMVCTemplate.csproj"'
       }
     }
 
