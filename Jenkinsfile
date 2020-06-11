@@ -26,7 +26,7 @@ pipeline {
 
     stage('Check') {
       steps {
-        sh 'ls "AspNetCoreMVCTemplate\\bin\\Release\\netcoreapp3.1"'
+        sh 'ls "/AspNetCoreMVCTemplate\\bin\\Release\\netcoreapp3.1"'
       }
     }
 
