@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('Restore Package') {
       steps {
-        sh 'nuget restore "/AspNetCoreMVCTemplate.sln"'
+        sh 'dotnet restore'
       }
     }
 
