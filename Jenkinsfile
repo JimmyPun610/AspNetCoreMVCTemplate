@@ -6,16 +6,9 @@ pipeline {
 
   }
   stages {
-    stage('Settings') {
-      steps {
-        sh 'ls'
-        sh 'export DOTNET_CLI_HOME="/tmp/DOTNET_CLI_HOME"'
-      }
-    }
-
     stage('Publish') {
       steps {
-        sh 'dotnet publish "~/AspNetCoreMVCTemplate.csproj" -o /publish'
+        sh 'dotnet publish "~/AspNetCoreMVCTemplate/AspNetCoreMVCTemplate.csproj" -o /publish'
       }
     }
 
