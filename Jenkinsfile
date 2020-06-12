@@ -30,9 +30,10 @@ pipeline {
       }
     }
 
-    stage('Check') {
+    stage('Archive') {
       steps {
         sh 'ls AspNetCoreMVCTemplate/bin/Release/netcoreapp3.1/publish/'
+        archiveArtifacts(artifacts: 'AspNetCoreMVCTemplate/bin/Release/netcoreapp3.1/publish/', onlyIfSuccessful: true)
       }
     }
 
